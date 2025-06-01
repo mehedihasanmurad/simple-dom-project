@@ -17,8 +17,98 @@
     </header>
     <main class="max-w-7xl mx-auto my-20">
         <section class="lg:flex gap-10">
+            <!-- player show and price starts -->
+            <div class="lg:w-3/5 grid grid-cols-1 lg:grid-cols-3 gap-4 text-center">
+                <div class="border border-red-50 rounded-lg p-5 shadow-2xl">
+                    <h3 class="font-bold">Tamim Iqbal</h3>
+                    <h3 id="player-price" class="font-bold">Price : <span>300</span> $</h3>
+                    <h3 class="font-bold">Category : Bat</h3>
+                    <button class="bg-slate-300 px-3 py-1 mt-2 rounded-lg add-to-cart">Add to Cart</button>
+                </div>
             
+                <div class="border border-red-50 rounded-lg p-5 shadow-2xl">
+                    <h3 class="font-bold">Sakib Al Hasan</h3>
+                    <h3 id="player-price" class="font-bold">Price : <span>300</span> $</h3>
+                    <h3 class="font-bold">Category : All-rounder</h3>
+                    <button class="bg-slate-300 px-3 py-1 mt-2 rounded-lg add-to-cart">Add to Cart</button>
+                </div>
+                <div class="border border-red-50 rounded-lg p-5 shadow-2xl">
+                    <h3 class="font-bold">Musfiq</h3>
+                    <h3 id="player-price" class="font-bold">Price : <span>250</span> $</h3>
+                    <h3 class="font-bold">Category : Bat</h3>
+                    <button class="bg-slate-300 px-3 py-1 mt-2 rounded-lg add-to-cart">Add to Cart</button>
+                </div>
+                <div class="border border-red-50 rounded-lg p-5 shadow-2xl">
+                    <h3 class="font-bold">Mustafiz</h3>
+                    <h3 id="player-price" class="font-bold">Price : <span>400</span> $</h3>
+                    <h3 class="font-bold">Category : Bowl</h3>
+                    <button class="bg-slate-300 px-3 py-1 mt-2 rounded-lg add-to-cart">Add to Cart</button>
+                </div>
+                <div class="border border-red-50 rounded-lg p-5 shadow-2xl">
+                    <h3 class="font-bold">Liton Das</h3>
+                    <h3 id="player-price" class="font-bold">Price : <span>250</span> $</h3>
+                    <h3 class="font-bold">Category : Bat</h3>
+                    <button class="bg-slate-300 px-3 py-1 mt-2 rounded-lg add-to-cart">Add to Cart</button>
+                </div>
+                <div class="border border-red-50 rounded-lg p-5 shadow-2xl">
+                    <h3 class="font-bold">Shanto</h3>
+                    <h3 id="player-price" class="font-bold">Price : <span>200</span> $</h3>
+                    <h3 class="font-bold">Category : Bat</h3>
+                    <button class="bg-slate-300 px-3 py-1 mt-2 rounded-lg add-to-cart">Add to Cart</button>
+                </div>
+                <div class="border border-red-50 rounded-lg p-5 shadow-2xl">
+                    <h3 class="font-bold">Miraz</h3>
+                    <h3 id="player-price" class="font-bold">Price : <span>350</span> $</h3>
+                    <h3 class="font-bold">Category : Bat</h3>
+                    <button class="bg-slate-300 px-3 py-1 mt-2 rounded-lg add-to-cart">Add to Cart</button>
+                </div>
+                <div class="border border-red-50 rounded-lg p-5 shadow-2xl">
+                    <h3 class="font-bold">Mahmudulla</h3>
+                    <h3 id="player-price" class="font-bold">Price : <span>300</span> $</h3>
+                    <h3 class="font-bold">Category : Bat</h3>
+                    <button class="bg-slate-300 px-3 py-1 mt-2 rounded-lg add-to-cart">Add to Cart</button>
+                </div>
+                <div class="border border-red-50 rounded-lg p-5 shadow-2xl">
+                    <h3 class="font-bold">Hasan Mahmud</h3>
+                    <h3 id="player-price" class="font-bold">Price : <span>250</span> $</h3>
+                    <h3 class="font-bold">Category : Bowl</h3>
+                    <button class="bg-slate-300 px-3 py-1 mt-2 rounded-lg add-to-cart">Add to Cart</button>
+                </div>
+                <div class="border border-red-50 rounded-lg p-5 shadow-2xl">
+                    <h3 class="font-bold">Taskin Ahmed</h3>
+                    <h3 id="player-price" class="font-bold">Price : <span>400</span> $</h3>
+                    <h3 class="font-bold">Category : Bowl</h3>
+                    <button class="bg-slate-300 px-3 py-1 mt-2 rounded-lg add-to-cart">Add to Cart</button>
+                </div>
+                <div class="border border-red-50 rounded-lg p-5 shadow-2xl">
+                    <h3 class="font-bold">Tanjid Tamim</h3>
+                    <h3 id="player-price" class="font-bold">Price : <span>300</span> $</h3>
+                    <h3 class="font-bold">Category : Bat</h3>
+                    <button class="bg-slate-300 px-3 py-1 mt-2 rounded-lg add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- player show and price ends -->
 
+            <!-- total cost of player starts -->
+            <div class="border border-red-50 rounded-lg p-5 shadow-2xl h-96  lg:w-2/5 mt-10 lg:mt-0">
+                <h1 class="text-center text-xl font-semibold mb-4">My Cart</h1>
+                <hr>
+                <div class="flex justify-around mt-2 mb-4">
+                    <h3>Name</h3>
+                    <h3>Price</h3>
+                    <h3>Category</h3>
+                </div>
+                <hr>
+                <div id="total-cost" class="text-center mt-3 font-semibold mb-4">Total Cost : <span>0</span> $</div>
+                <hr>
+                <div class="mt-4 text-center mb-4">
+                    <input class="border py-1 pl-3" type="text" name="" id="coupon-code" placeholder="Coupon Code">
+                    <button id="apply-btn" class="px-3 py-1 border ml-3 font-semibold text-md mt-3 lg:mt-0">Apply</button>
+                </div>
+                <hr>
+                <div id="grand-total" class="text-center mt-3 font-semibold mb-4">Grand Total : <span>0</span> $</div>
+            </div>
+            <!-- total cost of player ends -->
             
         </section>
     </main>
