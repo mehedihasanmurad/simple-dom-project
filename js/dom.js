@@ -10,6 +10,31 @@ for (const btn of allBtn) {
         const playerPrice = event.target.parentNode.childNodes[3].children[0].innerText 
         const category = event.target.parentNode.childNodes[5].children[0].innerText
         
+
+        //validation of update budget cart left
+        const firstCart = setParseIntValue("cart");
+        const secondLeft = setParseIntValue("player-limit");
+        if (firstCart + 1 > 6 || secondLeft - 1 < 0) {
+            alert("limit ses hoice r hobe na");
+            return;
+        }
+
+
+        //update budget cart left
+        const budget = setParseIntValue("budget");
+        document.getElementById("budget").innerText = budget - parseInt(playerPrice);
+
+        const cartCount = setParseIntValue("cart");
+        document.getElementById("cart").innerText = cartCount + 1;
+
+        const leftCount = setParseIntValue("player-limit");
+        document.getElementById("player-limit").innerText = leftCount - 1;
+
+        event.target.setAttribute("disabled", false);
+        event.target.parentNode.style.backgroundColor = "gray";
+        console.log()
+
+
         const playerSectionContainer = document.getElementById("player-section-container");
         const div = document.createElement("div");
         div.classList.add("flex");
@@ -29,3 +54,4 @@ for (const btn of allBtn) {
         updateGrandTotal();
     })
 }
+
