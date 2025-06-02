@@ -25,5 +25,7 @@ for (const btn of allBtn) {
         div.appendChild(p2);
         playerSectionContainer.appendChild(div)
 
+        updateTotalCost(playerPrice);
+        updateGrandTotal();
     })
 }
